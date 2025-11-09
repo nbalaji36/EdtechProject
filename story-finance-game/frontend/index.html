@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Future You: A Financial Story</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Future You: A Financial Story</h1>
+      <p class="tagline">
+        A story-driven simulation that teaches long-term investing & retirement decisions for young adults.
+      </p>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="label">Financial Literacy Score</span>
+          <span id="literacy-score">0</span>
+        </div>
+        <div class="stat small">
+          <span class="label">Chapters Visited</span>
+          <span id="chapters-count">0</span>
+        </div>
+      </div>
+
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill"></div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Left: current scene + choices -->
+      <section class="scene-column">
+        <div class="scene">
+          <h2 id="scene-title"></h2>
+          <p id="scene-text" class="scene-text"></p>
+          <p id="scene-question" class="scene-question"></p>
+        </div>
+
+        <div id="choices" class="choices"></div>
+      </section>
+
+      <!-- Right: explanation, outcome, decision timeline -->
+      <aside class="info-column">
+        <section id="explanation-box" class="explanation-box">
+          <h3>What You Just Learned</h3>
+          <p id="explanation"></p>
+        </section>
+
+        <section id="outcome-box">
+          <h3>Future Snapshot</h3>
+          <p id="outcome-text"></p>
+        </section>
+
+        <section id="timeline-box">
+          <h3>Your Decision Timeline</h3>
+          <ul id="timeline-list"></ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <p class="hint">
+        Every decision updates your literacy score, shows a projected impact on Future You,
+        and logs your path so you can compare timelines. This is a learning simulation, not just a quiz.
+      </p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
