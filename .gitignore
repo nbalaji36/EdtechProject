@@ -1,0 +1,42 @@
+# --- Python cache and compiled files ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.log
+*.sqlite3
+
+# --- Virtual environments ---
+venv/
+env/
+ENV/
+.venv/
+
+# --- IDE and editor settings ---
+.vscode/
+.idea/
+
+# --- OS-specific files ---
+.DS_Store
+Thumbs.db
+
+# --- Build and packaging directories ---
+build/
+dist/
+*.egg-info/
+
+# --- Frontend (Node / JS) ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.cache/
+
+# --- Miscellaneous ---
+*.tmp
+*.swp
+*.bak
+*.env
+.env.local
